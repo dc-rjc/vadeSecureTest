@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /* FONTS IMPORT */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        src: url('/assets/fonts/Roboto-Medium.ttf');
+    }
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url('/assets/fonts/Roboto-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: 'Parisienne';
+        font-style: normal;
+        font-weight: 400;
+        src: url('/assets/fonts/Parisienne-Regular.ttf');
+    }
+
+    h1 {
+        @apply text-7xl text-dark text-center font-['Parisienne'];
+    }
+
+    h3 {
+        @apply text-3xl font-medium text-darkest text-center;
+    }
+
+    h4 {
+        @apply text-2xl font-medium text-light font-['Parisienne'] pl-2;
+    }
+
+    p {
+        @apply text-darkest;
+    }
+
+    html {
+        @apply scroll-smooth;
+    }
+}
